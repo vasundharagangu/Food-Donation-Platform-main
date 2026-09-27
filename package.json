@@ -1,0 +1,24 @@
+{
+  "name": "FODO",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install:all": "npm --prefix backend install && npm --prefix frontend install",
+    "install:backend": "npm --prefix backend install",
+    "install:frontend": "npm --prefix frontend install",
+    "backend": "npm --prefix backend run dev",
+    "frontend": "npm --prefix frontend start",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "start": "concurrently \"npm --prefix backend start\" \"npm --prefix frontend start\"",
+    "seed:admin": "npm --prefix backend run seed:admin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "vite": "^7.1.7",
+    "concurrently": "^9.0.1"
+  }
+}
