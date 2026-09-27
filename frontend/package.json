@@ -1,0 +1,52 @@
+{
+  "name": "wastewarden-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Wastewarden - Food waste management system",
+  "private": true,
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "axios": "^1.5.0",
+    "socket.io-client": "^4.7.2",
+    "bootstrap": "^5.3.1",
+    "react-bootstrap": "^2.8.0",
+    "react-hook-form": "^7.45.4",
+    "react-query": "^3.39.3",
+    "react-toastify": "^9.1.3",
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^4.2.1",
+    "date-fns": "^2.30.0",
+    "jwt-decode": "^3.1.2",
+    "react-icons": "^4.10.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.4"
+  },
+  "proxy": "http://localhost:5000"
+}
