@@ -4,6 +4,14 @@ FODO is a **full-stack MERN application** designed to connect **food donors** wi
 
 ---
 
+## 🌐 Live Links (Deployed Environment)
+- **Frontend Live Link:** [Pending Deployment](#)
+- **Backend Live Link:** [Pending Deployment](#)
+
+*Note: Since deploying a full MERN stack permanently requires access to cloud accounts (like Vercel, Render, and MongoDB Atlas), these links are currently placeholders. Please see deployment instructions below to add your own live links.*
+
+---
+
 ## 🚀 Problem Statement
 
 Food donation often suffers from:
@@ -99,5 +107,35 @@ GitHub:
 ## 📜 Disclaimer
 
 This project was built for **educational and learning purposes**, focusing on system design, backend performance, and real-world problem solving.
+
+---
+
+## ☁️ Deployment Instructions
+
+To generate your own live links for this repository, follow these standard deployment steps:
+
+### 1. Database (MongoDB Atlas)
+- Create a free cluster on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas).
+- Get your connection string (e.g., `mongodb+srv://<user>:<password>@cluster.mongodb.net/dbname`).
+
+### 2. Backend (Render / Railway / Heroku)
+- Create a new Web Service on [Render](https://render.com) and connect your GitHub repository.
+- Set the Root Directory to `backend`.
+- Set the Build Command to `npm install` and the Start Command to `npm start` (or `node server.js`).
+- Add Environment Variables:
+  - `MONGODB_URI`: Your MongoDB Atlas connection string.
+  - `PORT`: (Render will set this automatically).
+  - `FRONTEND_URLS`: The URL of your soon-to-be-deployed frontend (e.g. `https://fodo-frontend.vercel.app`).
+- Deploy and copy the **Backend Live Link**.
+
+### 3. Frontend (Vercel / Netlify)
+- Create a new project on [Vercel](https://vercel.com) and connect your GitHub repository.
+- Set the Root Directory to `frontend`.
+- Ensure the Build Command is `npm run build` and Output Directory is `build`.
+- Add Environment Variables:
+  - `REACT_APP_API_BASE`: `<Backend Live Link>/api`
+  - `REACT_APP_SOCKET_URL`: `<Backend Live Link>`
+- Deploy and copy the **Frontend Live Link**.
+- Update the placeholders in the Live Links section at the top of this README.
 
 ---
